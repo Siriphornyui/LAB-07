@@ -11,9 +11,9 @@
 xxx	|ใช้ได้	|ไม่มีตัวอักษรที่ละเมิดกฎการตั้งชื่อ
 null	|ใช้ไม่ได้	|เป็นคำสงวนในภาษา C#
 _value	|ใช้ได้ |ไม่มีตัวอักษรที่ละเมิดกฎการตั้งชื่อ	
-First-name |ใช้ไม่ได้ |ไม่สามารถใช้เครื่องหมาย - ในการตั้งชื่อได้			
-Hello!	| ใช้ไม่ได้ |ไม่สามารถใช้เครื่องหมาย - ในการตั้งชื่อได้		
-w*h 	| ใช้ไม่ได้ |ไม่สามารถใช้เครื่องหมาย - ในการตั้งชื่อได้				
+First-name |ใช้ไม่ได้ |มีตัวอักษรที่ละเมิดกฎการตั้งชื่อ			
+Hello!	| ใช้ไม่ได้ |ไมีตัวอักษรที่ละเมิดกฎการตั้งชื่อ	
+w*h 	| ใช้ไม่ได้ |มีตัวอักษรที่ละเมิดกฎการตั้งชื่อ			
 time	| ใช้ได้ |ไม่มีตัวอักษรที่ละเมิดกฎการตั้งชื่อ			
 do	| ใช้ไม่ได้	|เป็นคำสงวนในภาษา C#			
 Do	| ใช้ได้ |ไม่มีตัวอักษรที่ละเมิดกฎการตั้งชื่อ				
@@ -71,6 +71,83 @@ Maximum Value :2147483647
 
 ข้อมูลชนิดตรรกะ (boolean) มีค่าที่เป็นไปได้เพียง 2 ค่าเท่านั้นคือ ```true``` และ ```false``` ในภาษา C# จะไม่สามารถกำหนดค่าตัวเลขลงไปในตัวแปร boolean ได้ ส่วนใหญ่ตัวแปร boolean มักใช้เพื่อการตัดสินใจและมีที่มาจากการประเมินค่าสมการต่างๆ ตัวอย่างต่อไปนี้เป็นการใช้ตัวแปร boolean กับการเปรียบเทียบด้วยตัวดำเนินการ “>”
 **ตัวอย่าง**
+```csharp
+            Console.WriteLine("siriphorn 57030226");
+            Console.WriteLine("Data type : byte");
+            Console.WriteLine("Size :" + sizeof(byte));
+            Console.WriteLine("Minimum Value :" + byte.MinValue);
+            Console.WriteLine("Maximum Value :" + byte.MaxValue);
+            Console.WriteLine("---------------------------------");
+              Console.WriteLine("siriphorn 57030226");
+            Console.WriteLine("Data type : char");
+            Console.WriteLine("Size :" + sizeof(char));
+            Console.WriteLine("Minimum Value :" + (int)char.MinValue);
+            Console.WriteLine("Maximum Value :" + (int)char.MaxValue);
+            Console.WriteLine("---------------------------------");
+              Console.WriteLine("siriphorn 57030226");
+            bool a = 4 > 5;
+            Console.WriteLine("Data type : bool");
+            Console.WriteLine("4 > 5 then True/False");
+            Console.WriteLine("{0}", a);
+            bool b = 10 < 20;
+            Console.WriteLine("10 < 20 then True/False");
+            Console.WriteLine("{0}", b);
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("siriphorn 57030226");
+            Console.WriteLine("Data type : sbyte");
+            Console.WriteLine("Size :" + sizeof(sbyte));
+            Console.WriteLine("Minimum Value :" + sbyte.MinValue);
+            Console.WriteLine("Maximum Value :" + sbyte.MaxValue);
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("siriphorn 57030226");
+            Console.WriteLine("Data type : short");
+            Console.WriteLine("Size :" + sizeof(short));
+            Console.WriteLine("Minimum Value :" + short.MinValue);
+            Console.WriteLine("Maximum Value :" + short.MaxValue);
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("siriphorn 57030226");
+            Console.WriteLine("Data type : ushort");
+            Console.WriteLine("Size :" + sizeof(ushort));
+            Console.WriteLine("Minimum Value :" + ushort.MinValue);
+            Console.WriteLine("Maximum Value :" + ushort.MaxValue);
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("siriphorn 57030226");
+            Console.WriteLine("Data type : uint");
+            Console.WriteLine("Size :" + sizeof(uint));
+            Console.WriteLine("Minimum Value :" + uint.MinValue);
+            Console.WriteLine("Maximum Value :" + uint.MaxValue);
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("siriphorn 57030226");
+            Console.WriteLine("Data type : float");
+            Console.WriteLine("Size :" + sizeof(float));
+            Console.WriteLine("Minimum Value :" + float.MinValue);
+            Console.WriteLine("Maximum Value :" + float.MaxValue);
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("siriphorn 57030226");
+            Console.WriteLine("Data type : double");
+            Console.WriteLine("Size :" + sizeof(double));
+            Console.WriteLine("Minimum Value :" + double.MinValue);
+            Console.WriteLine("Maximum Value :" + double.MaxValue);
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("siriphorn 57030226");
+            Console.WriteLine("Data type : decimal");
+            Console.WriteLine("Size :" + sizeof(decimal));
+            Console.WriteLine("Minimum Value :" + decimal.MinValue);
+            Console.WriteLine("Maximum Value :" + decimal.MaxValue);
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("siriphorn 57030226");
+            Console.WriteLine("Data type : long");
+            Console.WriteLine("Size :" + sizeof(long));
+            Console.WriteLine("Minimum Value :" + long.MinValue);
+            Console.WriteLine("Maximum Value :" + long.MaxValue);
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine("siriphorn 57030226");
+            Console.WriteLine("Data type : ulong");
+            Console.WriteLine("Size :" + sizeof(ulong));
+            Console.WriteLine("Minimum Value :" + ulong.MinValue);
+            Console.WriteLine("Maximum Value :" + ulong.MaxValue);
+            Console.WriteLine("---------------------------------");
+```
 ```csharp
 using System;
 
@@ -614,14 +691,14 @@ SunToEarthTimeOfLight = 8.33333333333333 minutes
 
 ดาวเคราะห์ | ระยะทางจากดวงอาทิตย์ | ระยะทางในหน่วย A.U. | เวลาของแสง (นาที)
 :----:|:----:|:----:|:----: 
-Mercury |	57,910,000 km		
-Venus |	108,200,000 km		
-Earth |	149,600,000 km		
-Mars |	227,940,000 km		
-Jupiter |	778,330,000 km		
-Uranus |	2,873,550,000 km		
-Neptune |	4,501,000,000 km		
-Pluto |	5,945,900,000 km		
+Mercury |	57,910,000 km	|0.386920491854452|3.22433743212043
+Venus |	108,200,000 km	|0.722928634409457|6.02440528674548
+Earth |	149,600,000 km	|0.999539036115109|8.32949196762591
+Mars |	227,940,000 km	|1.5229607479417|12.6913395661808
+Jupiter |	778,330,000 km	|5.20034236617295|43.3361863847746
+Uranus |	2,873,550,000 km|19.1993676285332|43.3361863847746
+Neptune |	4,501,000,000 km|30.0730294221531|250.608578517943	
+Pluto |	5,945,900,000 km|39.7269996981071|331.058330817559	
 
 ##คลาส Math 
 ในภาษา C# มีคลาสที่เป็นตัวช่วยคำนวณทางคณิตศาสตร์ ที่ช่วยให้เราสามารถคำนวณฟังก์ชันพื้นฐานได้ อย่างรวดเร็ว ไม่ต้องพัฒนาโปรแกรมเพิ่มเติมด้วยเอง นั่นคือคลาส Math  ฟังก์ชันทางคณิตศาสตร์ที่ใช้บ่อยๆ สามารถดูรายละเอียดทั้งหมดได้จาก 
@@ -676,9 +753,61 @@ The sine of       6.00 = -0.279415         *
 
 ##การทดลอง พล็อตรูปคลื่นทางคณิตศาสตร์
 จากโปรแกรมตัวอย่าง ให้ดัดแปลงโปรแกรมเพื่อวาดรูปคลื่นดังต่อไปนี้
-```
+
 1.	y = x2
-2.	y = cos(x)
-3.	y = tan(x)
+```csharp
+static void Main(string[] args)
+        {
+
+            for (float i = 0; i < Math.PI * 2.0F; i += 0.3F)
+            {
+                Console.WriteLine("piyapath 57030192");
+                Console.WriteLine("y=x2 {0,10:F} = {1,-10:F6}" + spaces((i * i)) + "*", i, (i * i));
+
+            }
+
+        }
+        private static string spaces(double val)
+        {
+            string SpaceString = new String(' ', (int)val);
+            return SpaceString;
 ```
+2.	y = cos(x)
+```csharp
+static void Main(string[] args)
+        {                       
+                for (float i = 0; i < Math.PI * 2.0F; i += 0.3F)
+                {
+
+                Console.WriteLine("piyapath 57030192  y = Cos x {0,10:F} = {1,-10:F6}" + spaces(Math.Cos(i)) + "*", i, Math.Cos(i));
+                }
+
+            }
+        private static string spaces(double val)
+        {
+            string SpaceString = new String(' ', ((int)(val * 10.0)) + 10);
+            return SpaceString;
+        }
+```
+3.	y = tan(x)
+```csharp
+static void Main(string[] args)
+        {
+            for (float i = 0; i < Math.PI * 2.0F; i += 0.3F)
+            {
+                Console.WriteLine("piyapath 57030192 y = Tan(x) {0,10:F} = {1,-10:F6}" + spaces(Math.Tan(i)) +"*", 
+		i, Math.Tan(i));
+            }
+
+        }
+        private static string spaces(double val)
+        {
+            string SpaceString = new string(' ', (int)val+25);
+            return SpaceString;
+        }
+    }
+}
+
+```
+
 	
