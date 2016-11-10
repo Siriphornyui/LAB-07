@@ -148,6 +148,9 @@ Maximum Value :2147483647
             Console.WriteLine("Maximum Value :" + ulong.MaxValue);
             Console.WriteLine("---------------------------------");
 ```
+<img src = "https://github.com/Siriphornyui/LAB-07/blob/master/704.jpg">
+
+<img src = "https://github.com/Siriphornyui/LAB-07/blob/master/705.jpg">
 ```csharp
 using System;
 
@@ -761,7 +764,7 @@ static void Main(string[] args)
 
             for (float i = 0; i < Math.PI * 2.0F; i += 0.3F)
             {
-                Console.WriteLine("piyapath 57030192");
+                Console.WriteLine("siriphorn 57030226");
                 Console.WriteLine("y=x2 {0,10:F} = {1,-10:F6}" + spaces((i * i)) + "*", i, (i * i));
 
             }
@@ -772,6 +775,7 @@ static void Main(string[] args)
             string SpaceString = new String(' ', (int)val);
             return SpaceString;
 ```
+<img src="https://github.com/Siriphornyui/LAB-07">
 2.	y = cos(x)
 ```csharp
 static void Main(string[] args)
@@ -779,7 +783,7 @@ static void Main(string[] args)
                 for (float i = 0; i < Math.PI * 2.0F; i += 0.3F)
                 {
 
-                Console.WriteLine("piyapath 57030192  y = Cos x {0,10:F} = {1,-10:F6}" + spaces(Math.Cos(i)) + "*", i, Math.Cos(i));
+                Console.WriteLine("siriphorn57030226  y = Cos x {0,10:F} = {1,-10:F6}" + spaces(Math.Cos(i)) + "*", i, Math.Cos(i));
                 }
 
             }
@@ -789,25 +793,30 @@ static void Main(string[] args)
             return SpaceString;
         }
 ```
+
+<img src="https://github.com/Siriphornyui/LAB-07/blob/master/702.jpg">
+
 3.	y = tan(x)
 ```csharp
-static void Main(string[] args)
+ static void Main(string[] args)
+        
         {
+
             for (float i = 0; i < Math.PI * 2.0F; i += 0.3F)
             {
-                Console.WriteLine("piyapath 57030192 y = Tan(x) {0,10:F} = {1,-10:F6}" + spaces(Math.Tan(i)) +"*", 
-		i, Math.Tan(i));
+                Console.WriteLine("57030226 siriphorn y = Tan(x) {0,10:F} = {1,-10:F6}" + spaces(Math.Tan(i)) + "*",
+        i, Math.Tan(i));
             }
 
         }
         private static string spaces(double val)
         {
-            string SpaceString = new string(' ', (int)val+25);
+            string SpaceString = new string(' ', (int)val + 25);
             return SpaceString;
-        }
-    }
-}
+
+
 
 ```
 
+<img src="https://github.com/Siriphornyui/LAB-07/blob/master/703.jpg">
 	
