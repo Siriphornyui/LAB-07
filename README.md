@@ -775,7 +775,10 @@ static void Main(string[] args)
             string SpaceString = new String(' ', (int)val);
             return SpaceString;
 ```
+
 <img src="https://github.com/Siriphornyui/LAB-07">
+
+
 2.	y = cos(x)
 ```csharp
 static void Main(string[] args)
